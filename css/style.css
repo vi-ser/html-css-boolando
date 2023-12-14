@@ -189,5 +189,55 @@ main .container .product .favourite span {
 /* fine BONUS */
 
 /* footer */
+footer {
+    padding: 32px;
+
+    background-color: #1e1e1e;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .info .name {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+
+footer .container .info .legal {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+footer .container .social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .container .social .find-us {
+    font-size: 14px;
+}
+
+footer .container .social .icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+footer .container .social .icons img {
+    width: 20px;
+}
+
+
+
+
+
+
+
 
 /* fine footer */
