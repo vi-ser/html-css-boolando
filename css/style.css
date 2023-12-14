@@ -56,6 +56,30 @@ nav .icons img {
     width: 24px;
 }
 
-
-
 /* fine navbar */
+
+/* main */
+main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-top: 120px;
+
+}
+
+main .container .product {
+    border: red solid 1px;
+    /* test */
+    width: calc(33.33% - 20px);
+    height: 300px;
+    margin-bottom: 48px;
+
+}
+
+/* fine main */
+
+/* footer */
+
+/* fine footer */
