@@ -49,6 +49,7 @@ nav .logo {
 
 nav .icons {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -60,6 +61,7 @@ nav .icons img {
 
 /* main */
 main .container {
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -71,12 +73,91 @@ main .container {
 
 main .container .product {
     border: red solid 1px;
+    /* height: 300px; */
     /* test */
+
+    position: relative;
+
     width: calc(33.33% - 20px);
-    height: 300px;
     margin-bottom: 48px;
 
 }
+
+main .container .product img {
+
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+main .container .product .brand {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+main .container .product .name {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+main .container .product .price {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}
+
+main .container .product .price-old {
+    font-weight: 200;
+    color: black;
+    text-decoration: line-through;
+}
+
+main .container .product .tags {
+    position: absolute;
+    bottom: 100px;
+
+}
+
+main .container .product .tags .label {
+    display: inline-block;
+    padding: 4px 10px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+main .container .product .sale {
+    background-color: red;
+}
+
+main .container .product .tags .green {
+    background-color: green;
+}
+
+main .container .product .favourite {
+    padding: 8px 15px;
+
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+    background-color: white;
+    color: black;
+}
+
+main .container .product .favourite span {
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
 
 /* fine main */
 
