@@ -19,6 +19,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 
     padding: 20px;
 
@@ -28,8 +29,8 @@ nav {
 
 nav .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -40,7 +41,6 @@ nav ul {
     list-style-type: none;
     color: white;
     font-weight: bold;
-
 }
 
 nav .logo {
@@ -72,19 +72,18 @@ main .container {
 }
 
 main .container .product {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     /* height: 300px; */
     /* test */
 
     position: relative;
 
     width: calc(33.33% - 20px);
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 
 }
 
 main .container .product img {
-
     width: 100%;
     margin-bottom: 4px;
 }
@@ -150,16 +149,44 @@ main .container .product .favourite span {
     font-size: 24px;
 }
 
-
-
-
-
-
-
-
-
-
 /* fine main */
+/* hover  */
+main .container #first:hover img {
+    content: url(../img/1b.webp);
+}
+
+main .container #second:hover img {
+    content: url(../img/2b.webp);
+}
+
+main .container #third:hover img {
+    content: url(../img/3b.webp);
+}
+
+main .container #fourth:hover img {
+    content: url(../img/4b.webp);
+}
+
+main .container #fifth:hover img {
+    content: url(../img/5b.webp);
+}
+
+main .container #sixth:hover img {
+    content: url(../img/6b.webp);
+}
+
+/* fine hover immagini */
+
+/* BONUS */
+main .container .product .favourite:hover span {
+    color: red;
+}
+
+main .container .product .favourite span {
+    user-select: none;
+}
+
+/* fine BONUS */
 
 /* footer */
 
