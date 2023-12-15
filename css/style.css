@@ -78,7 +78,10 @@ main .container .product {
 
     position: relative;
 
-    width: calc(33.33% - 20px);
+    /* quando abbiamo una colonna in un display flex wrap e c'è un gap nel genitore, dobbiamo usare sta regola per eliminare i gap dalla larghezza:
+    calc(100% / n colonne - px gap / n colonne * (n colonne-1) */
+
+    width: calc(100% / 3 - 20px / 3 * 2);
     margin-bottom: 24px;
 
 }
@@ -86,6 +89,21 @@ main .container .product {
 main .container .product img {
     width: 100%;
     margin-bottom: 4px;
+}
+
+main .container .product img:nth-of-type(2) {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* sfumare il cambio di proprietà */
+    transition: opacity .3s;
+}
+
+
+main .container .product:hover img {
+    opacity: 1;
+
 }
 
 main .container .product .brand {
@@ -150,32 +168,7 @@ main .container .product .favourite span {
 }
 
 /* fine main */
-/* hover  */
-main .container #first:hover img {
-    content: url(../img/1b.webp);
-}
 
-main .container #second:hover img {
-    content: url(../img/2b.webp);
-}
-
-main .container #third:hover img {
-    content: url(../img/3b.webp);
-}
-
-main .container #fourth:hover img {
-    content: url(../img/4b.webp);
-}
-
-main .container #fifth:hover img {
-    content: url(../img/5b.webp);
-}
-
-main .container #sixth:hover img {
-    content: url(../img/6b.webp);
-}
-
-/* fine hover immagini */
 
 /* BONUS */
 main .container .product .favourite:hover span {
